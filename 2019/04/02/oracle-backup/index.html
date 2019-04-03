@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Anly&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta name="description" content="ORACLE数据库备份结果检查：123456789101112131415161718192021222324SELECT A.RECID &amp;quot;BACKUP SET&amp;quot;,         A.SET_STAMP,         DECODE (B.INCREMENTAL_LEVEL,                 &amp;apos;&amp;apos;, DECODE (BACKUP_TYP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ORACLE数据库备份检查脚本">
+<meta property="og:url" content="http://yoursite.com/2019/04/02/oracle-backup/index.html">
 <meta property="og:site_name" content="Anly&#39;s Blog">
+<meta property="og:description" content="ORACLE数据库备份结果检查：123456789101112131415161718192021222324SELECT A.RECID &amp;quot;BACKUP SET&amp;quot;,         A.SET_STAMP,         DECODE (B.INCREMENTAL_LEVEL,                 &amp;apos;&amp;apos;, DECODE (BACKUP_TYP">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-03T04:11:01.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Anly&#39;s Blog">
+<meta name="twitter:title" content="ORACLE数据库备份检查脚本">
+<meta name="twitter:description" content="ORACLE数据库备份结果检查：123456789101112131415161718192021222324SELECT A.RECID &amp;quot;BACKUP SET&amp;quot;,         A.SET_STAMP,         DECODE (B.INCREMENTAL_LEVEL,                 &amp;apos;&amp;apos;, DECODE (BACKUP_TYP">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/02/oracle-backup/">
 
 
 
 
 
-  <title>归档 | Anly's Blog</title>
+  <title>ORACLE数据库备份检查脚本 | Anly's Blog</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,107 +248,162 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/02/oracle-backup/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Anly_Zhang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Anly's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/04/03/ogg-silent-install/" itemprop="url">
-              
-                <span itemprop="name">ogg静默安装</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">ORACLE数据库备份检查脚本</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-03T13:34:34+08:00" content="2019-04-03">
-          04-03
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-02T18:49:18+08:00">
+                2019-04-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/database/" itemprop="url" rel="index">
+                    <span itemprop="name">database</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/02/oracle-backup/" itemprop="url">
-              
-                <span itemprop="name">ORACLE数据库备份检查脚本</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-02T18:49:18+08:00" content="2019-04-02">
-          04-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h4 id="ORACLE数据库备份结果检查："><a href="#ORACLE数据库备份结果检查：" class="headerlink" title="ORACLE数据库备份结果检查："></a>ORACLE数据库备份结果检查：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">SELECT A.RECID &quot;BACKUP SET&quot;,</span><br><span class="line">         A.SET_STAMP,</span><br><span class="line">         DECODE (B.INCREMENTAL_LEVEL,</span><br><span class="line">                 &apos;&apos;, DECODE (BACKUP_TYPE, &apos;L&apos;, &apos;Archivelog&apos;, &apos;Full&apos;),</span><br><span class="line">                 1, &apos;Incr-1&apos;,</span><br><span class="line">                 0, &apos;Incr-0&apos;,</span><br><span class="line">                 B.INCREMENTAL_LEVEL)</span><br><span class="line">            &quot;Type LV&quot;,</span><br><span class="line">         B.CONTROLFILE_INCLUDED &quot;including CTL&quot;,</span><br><span class="line">         DECODE (A.STATUS,</span><br><span class="line">                 &apos;A&apos;, &apos;AVAILABLE&apos;,</span><br><span class="line">                 &apos;D&apos;, &apos;DELETED&apos;,</span><br><span class="line">                 &apos;X&apos;, &apos;EXPIRED&apos;,</span><br><span class="line">                 &apos;ERROR&apos;)</span><br><span class="line">            &quot;STATUS&quot;,</span><br><span class="line">         A.DEVICE_TYPE &quot;Device Type&quot;,</span><br><span class="line">         A.START_TIME &quot;Start Time&quot;,</span><br><span class="line">         A.COMPLETION_TIME &quot;Completion Time&quot;,</span><br><span class="line">         A.ELAPSED_SECONDS &quot;Elapsed Seconds&quot;,</span><br><span class="line">         A.TAG &quot;Tag&quot;,</span><br><span class="line">         A.HANDLE &quot;Path&quot;</span><br><span class="line">    FROM GV$BACKUP_PIECE A, GV$BACKUP_SET B</span><br><span class="line">   WHERE A.SET_STAMP = B.SET_STAMP AND A.DELETED = &apos;NO&apos;</span><br><span class="line">ORDER BY A.COMPLETION_TIME DESC;</span><br></pre></td></tr></table></figure>
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/03/ogg-silent-install/" rel="prev" title="ogg静默安装">
+                ogg静默安装 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -352,6 +411,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -372,8 +435,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -424,6 +496,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ORACLE数据库备份结果检查："><span class="nav-number">1.</span> <span class="nav-text">ORACLE数据库备份结果检查：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -557,6 +645,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
