@@ -96,19 +96,17 @@
 
 
 
-  <meta name="description" content="安装包准备PMM 有两种安装方式：  使用Docker进行部署 直接下载官方提供的集成了PMM的OVF文件  部署环境 操作系统： Centos 7 内存：3G 硬盘：30GB  逻辑架构 部署步骤 操作系统是部署Docker123yum -y install dockersystemctl start docker.servicesystemctl enable docker.service">
+  <meta name="description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PMM部署方案">
-<meta property="og:url" content="http://yoursite.com/2019/04/03/pmm-install/index.html">
+<meta property="og:title" content="ogg静默安装">
+<meta property="og:url" content="http://yoursite.com/2019-04-03-ogg-silent-install.html">
 <meta property="og:site_name" content="Anly&#39;s Blog">
-<meta property="og:description" content="安装包准备PMM 有两种安装方式：  使用Docker进行部署 直接下载官方提供的集成了PMM的OVF文件  部署环境 操作系统： Centos 7 内存：3G 硬盘：30GB  逻辑架构 部署步骤 操作系统是部署Docker123yum -y install dockersystemctl start docker.servicesystemctl enable docker.service">
+<meta property="og:description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://s2.ax1x.com/2019/04/03/AgV8M9.png">
-<meta property="og:updated_time" content="2019-04-04T02:01:47.346Z">
+<meta property="og:updated_time" content="2019-04-03T08:16:32.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PMM部署方案">
-<meta name="twitter:description" content="安装包准备PMM 有两种安装方式：  使用Docker进行部署 直接下载官方提供的集成了PMM的OVF文件  部署环境 操作系统： Centos 7 内存：3G 硬盘：30GB  逻辑架构 部署步骤 操作系统是部署Docker123yum -y install dockersystemctl start docker.servicesystemctl enable docker.service">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/04/03/AgV8M9.png">
+<meta name="twitter:title" content="ogg静默安装">
+<meta name="twitter:description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
 
 
 
@@ -116,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/03/pmm-install/">
+  <link rel="canonical" href="http://yoursite.com/2019-04-03-ogg-silent-install">
 
 
 
@@ -126,7 +124,7 @@
   };
 </script>
 
-  <title>PMM部署方案 | Anly's Blog</title>
+  <title>ogg静默安装 | Anly's Blog</title>
   
 
 
@@ -375,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/pmm-install/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019-04-03-ogg-silent-install.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Anly_Zhang">
@@ -392,7 +390,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PMM部署方案
+          <h1 class="post-title" itemprop="name headline">ogg静默安装
 
               
             
@@ -418,24 +416,12 @@
                 
               
 
-              <time title="创建时间：2019-04-03 17:22:12" itemprop="dateCreated datePublished" datetime="2019-04-03T17:22:12+08:00">2019-04-03</time>
+              <time title="创建时间：2019-04-03 13:34:34 / 修改时间：16:16:32" itemprop="dateCreated datePublished" datetime="2019-04-03T13:34:34+08:00">2019-04-03</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-04 10:01:47" itemprop="dateModified" datetime="2019-04-04T10:01:47+08:00">2019-04-04</time>
               
             
           </span>
@@ -487,49 +473,12 @@
       
 
       
-        <h3 id="安装包准备"><a href="#安装包准备" class="headerlink" title="安装包准备"></a>安装包准备</h3><p>PMM 有两种安装方式：</p>
-<ul>
-<li>使用Docker进行部署</li>
-<li>直接下载官方提供的集成了PMM的OVF文件</li>
-</ul>
-<h3 id="部署环境"><a href="#部署环境" class="headerlink" title="部署环境"></a>部署环境</h3><ol>
-<li>操作系统： Centos 7</li>
-<li>内存：3G</li>
-<li>硬盘：30GB</li>
-</ol>
-<h3 id="逻辑架构"><a href="#逻辑架构" class="headerlink" title="逻辑架构"></a>逻辑架构</h3><p><img src="https://s2.ax1x.com/2019/04/03/AgV8M9.png" alt></p>
-<h3 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h3><ul>
-<li>操作系统是部署Docker<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y install docker</span><br><span class="line">systemctl start docker.service</span><br><span class="line">systemctl enable docker.service</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<a id="more"></a>
-<ul>
-<li>Docker上部署PMM<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">docker pull percona/pmm-server:latest</span><br><span class="line"></span><br><span class="line">docker create \</span><br><span class="line">   -v /opt/prometheus/data \</span><br><span class="line">   -v /opt/consul-data \</span><br><span class="line">   -v /var/lib/mysql \</span><br><span class="line">   -v /var/lib/grafana \</span><br><span class="line">   --name pmm-data \</span><br><span class="line">   percona/pmm-server:latest /bin/true</span><br><span class="line"></span><br><span class="line"> docker run -d \</span><br><span class="line">   -p 80:80 \</span><br><span class="line">   --volumes-from pmm-data \</span><br><span class="line">   --name pmm-server \</span><br><span class="line">   --restart always \</span><br><span class="line">   percona/pmm-server:latest</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>至此PMM基于Docker上的安装就结束了<br>默认密码是admin/admin</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
-<li><p>监控告警通知工具</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    集成有多种告警通知方案，dingding,telegram,email等等，实时性较高的telegram；在这里，主要就telegram来进行配置：</span><br><span class="line">    登录系统后，进入[Alerting]----[Notification channels]----[+new channels]</span><br><span class="line">    输入name之后，在type栏选择telegram，然后去申请telegram api进行配置。</span><br><span class="line">    telegram bot api 需要关注@BotFather之后按提示进行操作，创建好bot之后，新建一个聊天群组，将bot与需要接收通知的人加入到群组中。之后发送/hello @dbotibot，之后通过这个方法获取到chat_id</span><br><span class="line">https://api.telegram.org/botxxx:xxx/getUpdates</span><br><span class="line">将获取到底id配置到配置项里面，测试发送，能正常收到信息即可。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置监控对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">在上报端安装需要安装client并且进行配置，才能够将信息提交到PMM服务器上。</span><br><span class="line">yum install https://repo.percona.com/yum/percona-release-latest.noarch.rpm</span><br><span class="line">yum -y install pmm-client</span><br><span class="line"></span><br><span class="line">完成安装之后可以使用pmm-admin命令行模式进行管理</span><br><span class="line">pmm-admin config --server x.x.x.x 命令将被监控端数据提交到监控端。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加相关监控项</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pmm-admin add xxxx name option添加监控到视图</span><br><span class="line"></span><br><span class="line">如需要监控mysql：</span><br><span class="line"></span><br><span class="line">pmm-admin add mysql --user=xxx --password=xxx --host=x.x.x.x(如果在上报端执行，则此处填写本机ip；如果在收集端执行，此处执行mysql端ip)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>监控MYSQL需要安装percona-tookit，需要提前安装环境包：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install perl-Digest-MD5 perl-DBI  perl-DBD-MySQL  perl-TermReadKey perl-devel perl-Time-HiRes perl-IO-Socket-SSL</span><br><span class="line">yum -y install percona-toolkit</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="验收"><a href="#验收" class="headerlink" title="验收"></a>验收</h3><p>验收其实很简单，打开home dashboard，查看监控项是否已经被加入，数据是否能正常被更新<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://x.x.x.x/graph/打开平台网址</span><br></pre></td></tr></table></figure></p>
-<p>需要针对性检查：</p>
-<ul>
-<li>Query analytics</li>
-<li>Mysql</li>
-<li>PMM<br>每项都必须进行校验数据是否被收集更新，另外，可以对数据库或者服务器进行一个压力测试，以检测数据是否被正常收集。</li>
-</ul>
-
+        <h5 id="解压ogg安装包"><a href="#解压ogg安装包" class="headerlink" title="解压ogg安装包"></a>解压ogg安装包</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip fbo_ggs_Linux_x64_shiphome.zip</span><br></pre></td></tr></table></figure>
+<h5 id="创建ogg安装目录"><a href="#创建ogg安装目录" class="headerlink" title="创建ogg安装目录"></a>创建ogg安装目录</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。</span><br></pre></td></tr></table></figure>
+<h5 id="配置应答文件"><a href="#配置应答文件" class="headerlink" title="配置应答文件"></a>配置应答文件</h5><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">####################################################################</span><br><span class="line">##Copyright(c) Oracle Corporation 2014. All rights reserved. </span><br><span class="line">## Specify values for the variables listed below to customize </span><br><span class="line">## your installation. </span><br><span class="line">## Each variable is associated with a comment. The comment </span><br><span class="line">## can help to populate the variables with the appropriate </span><br><span class="line">## values. </span><br><span class="line">## IMPORTANT NOTE: This file should be secured to have read </span><br><span class="line">## permission only by the oracle user or an administrator who </span><br><span class="line">## own this installation to protect any sensitive input values.  </span><br><span class="line">####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Do not change the following system generated value.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">oracle.install.responseFileVersion=/oracle/install/rspfmt_ogginstall_response_schema_v12_1_2</span><br><span class="line"></span><br><span class="line">####################################################################</span><br><span class="line">##</span><br><span class="line">##</span><br><span class="line">## Oracle GoldenGate installation option and details </span><br><span class="line">##</span><br><span class="line">####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the installation option.</span><br><span class="line"># Specify ORA12c for installing Oracle GoldenGate for Oracle Database 12c and</span><br><span class="line"># ORA11g for installing Oracle GoldenGate for Oracle Database 11g</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">INSTALL_OPTION=ORA11g 指定同步数据库版本</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify a location to install Oracle GoldenGate</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">SOFTWARE_LOCATION=/oradata/ogg 指定安装目录</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify true to start the manager after installation.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">START_MANAGER=false</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify a free port within the valid range for the manager process.</span><br><span class="line"># Required only if START_MANAGER is true.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line">MANAGER_PORT=</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the location of the Oracle Database.</span><br><span class="line"># Required only if START_MANAGER is true.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">DATABASE_LOCATION=</span><br><span class="line">#######################################################################</span><br><span class="line">##</span><br><span class="line">## Specify details to Create inventory for Oracle installs </span><br><span class="line">## Required only for the first Oracle product install on a system. </span><br><span class="line">##</span><br><span class="line">## ####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the location which holds the install inventory files.</span><br><span class="line"># This is an optional parameter if installing on# Windows based Operating System.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">INVENTORY_LOCATION=/u01/app/oracle/oraInventory 指定inventory目录的位置</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Unix group to be set for the inventory directory.</span><br><span class="line"># This parameter is not applicable if installing on</span><br><span class="line"># Windows based Operating System.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">UNIX_GROUP_NAME=oinstall</span><br></pre></td></tr></table></figure>
+<h5 id="使用应答文件进行OGG软件安装"><a href="#使用应答文件进行OGG软件安装" class="headerlink" title="使用应答文件进行OGG软件安装"></a>使用应答文件进行OGG软件安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./runInstaller -silent -responseFile /home/oracle/fbo_ggs_Linux_x64_shiphome/Disk1/response/oggcore.rsp</span><br></pre></td></tr></table></figure>
+<h5 id="看到如下信息说明安装成功："><a href="#看到如下信息说明安装成功：" class="headerlink" title="看到如下信息说明安装成功："></a>看到如下信息说明安装成功：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The installation of Oracle GoldenGate Core was successful.Please check &apos;/u01/app/oracle/oraInventory/logs/silentInstall2017-05-04_03-25-48PM.log&apos; for more details.Successfully Setup Software.</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -559,8 +508,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/03/ogg-silent-install/" rel="next" title="ogg静默安装">
-                <i class="fa fa-chevron-left"></i> ogg静默安装
+              <a href="/2019-04-02-oracle-backup.html" rel="next" title="ORACLE数据库备份检查脚本">
+                <i class="fa fa-chevron-left"></i> ORACLE数据库备份检查脚本
               </a>
             
           </div>
@@ -569,8 +518,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/06/atlas-change/" rel="prev" title="atlas主从切换">
-                atlas主从切换 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-04-03-pmm-install.html" rel="prev" title="PMM部署方案">
+                PMM部署方案 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -695,7 +644,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装包准备"><span class="nav-number">1.</span> <span class="nav-text">安装包准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署环境"><span class="nav-number">2.</span> <span class="nav-text">部署环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑架构"><span class="nav-number">3.</span> <span class="nav-text">逻辑架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署步骤"><span class="nav-number">4.</span> <span class="nav-text">部署步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">5.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验收"><span class="nav-number">6.</span> <span class="nav-text">验收</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#解压ogg安装包"><span class="nav-number">1.</span> <span class="nav-text">解压ogg安装包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建ogg安装目录"><span class="nav-number">2.</span> <span class="nav-text">创建ogg安装目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置应答文件"><span class="nav-number">3.</span> <span class="nav-text">配置应答文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用应答文件进行OGG软件安装"><span class="nav-number">4.</span> <span class="nav-text">使用应答文件进行OGG软件安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#看到如下信息说明安装成功："><span class="nav-number">5.</span> <span class="nav-text">看到如下信息说明安装成功：</span></a></li></ol></div>
             
 
           </div>

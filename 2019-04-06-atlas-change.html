@@ -96,17 +96,19 @@
 
 
 
-  <meta name="description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
+  <meta name="description" content="现有架构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ogg静默安装">
-<meta property="og:url" content="http://yoursite.com/2019/04/03/ogg-silent-install/index.html">
+<meta property="og:title" content="atlas主从切换">
+<meta property="og:url" content="http://yoursite.com/2019-04-06-atlas-change.html">
 <meta property="og:site_name" content="Anly&#39;s Blog">
-<meta property="og:description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
+<meta property="og:description" content="现有架构">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-03T08:16:32.186Z">
+<meta property="og:image" content="http://yoursite.com/images/db.png">
+<meta property="og:updated_time" content="2019-04-06T08:33:14.149Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ogg静默安装">
-<meta name="twitter:description" content="解压ogg安装包1unzip fbo_ggs_Linux_x64_shiphome.zip 创建ogg安装目录1mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。 配置应答文件">
+<meta name="twitter:title" content="atlas主从切换">
+<meta name="twitter:description" content="现有架构">
+<meta name="twitter:image" content="http://yoursite.com/images/db.png">
 
 
 
@@ -114,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/03/ogg-silent-install/">
+  <link rel="canonical" href="http://yoursite.com/2019-04-06-atlas-change">
 
 
 
@@ -124,7 +126,7 @@
   };
 </script>
 
-  <title>ogg静默安装 | Anly's Blog</title>
+  <title>atlas主从切换 | Anly's Blog</title>
   
 
 
@@ -373,7 +375,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/ogg-silent-install/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019-04-06-atlas-change.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Anly_Zhang">
@@ -390,7 +392,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ogg静默安装
+          <h1 class="post-title" itemprop="name headline">atlas主从切换
 
               
             
@@ -416,7 +418,7 @@
                 
               
 
-              <time title="创建时间：2019-04-03 13:34:34 / 修改时间：16:16:32" itemprop="dateCreated datePublished" datetime="2019-04-03T13:34:34+08:00">2019-04-03</time>
+              <time title="创建时间：2019-04-06 16:05:05 / 修改时间：16:33:14" itemprop="dateCreated datePublished" datetime="2019-04-06T16:05:05+08:00">2019-04-06</time>
             
 
             
@@ -473,12 +475,28 @@
       
 
       
-        <h5 id="解压ogg安装包"><a href="#解压ogg安装包" class="headerlink" title="解压ogg安装包"></a>解压ogg安装包</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip fbo_ggs_Linux_x64_shiphome.zip</span><br></pre></td></tr></table></figure>
-<h5 id="创建ogg安装目录"><a href="#创建ogg安装目录" class="headerlink" title="创建ogg安装目录"></a>创建ogg安装目录</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /ogg  该目录需要使用root创建,并授权给oracle用户使用。</span><br></pre></td></tr></table></figure>
-<h5 id="配置应答文件"><a href="#配置应答文件" class="headerlink" title="配置应答文件"></a>配置应答文件</h5><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">####################################################################</span><br><span class="line">##Copyright(c) Oracle Corporation 2014. All rights reserved. </span><br><span class="line">## Specify values for the variables listed below to customize </span><br><span class="line">## your installation. </span><br><span class="line">## Each variable is associated with a comment. The comment </span><br><span class="line">## can help to populate the variables with the appropriate </span><br><span class="line">## values. </span><br><span class="line">## IMPORTANT NOTE: This file should be secured to have read </span><br><span class="line">## permission only by the oracle user or an administrator who </span><br><span class="line">## own this installation to protect any sensitive input values.  </span><br><span class="line">####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Do not change the following system generated value.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">oracle.install.responseFileVersion=/oracle/install/rspfmt_ogginstall_response_schema_v12_1_2</span><br><span class="line"></span><br><span class="line">####################################################################</span><br><span class="line">##</span><br><span class="line">##</span><br><span class="line">## Oracle GoldenGate installation option and details </span><br><span class="line">##</span><br><span class="line">####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the installation option.</span><br><span class="line"># Specify ORA12c for installing Oracle GoldenGate for Oracle Database 12c and</span><br><span class="line"># ORA11g for installing Oracle GoldenGate for Oracle Database 11g</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">INSTALL_OPTION=ORA11g 指定同步数据库版本</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify a location to install Oracle GoldenGate</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">SOFTWARE_LOCATION=/oradata/ogg 指定安装目录</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify true to start the manager after installation.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">START_MANAGER=false</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify a free port within the valid range for the manager process.</span><br><span class="line"># Required only if START_MANAGER is true.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line">MANAGER_PORT=</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the location of the Oracle Database.</span><br><span class="line"># Required only if START_MANAGER is true.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">DATABASE_LOCATION=</span><br><span class="line">#######################################################################</span><br><span class="line">##</span><br><span class="line">## Specify details to Create inventory for Oracle installs </span><br><span class="line">## Required only for the first Oracle product install on a system. </span><br><span class="line">##</span><br><span class="line">## ####################################################################</span><br><span class="line"></span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Specify the location which holds the install inventory files.</span><br><span class="line"># This is an optional parameter if installing on# Windows based Operating System.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">INVENTORY_LOCATION=/u01/app/oracle/oraInventory 指定inventory目录的位置</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"># Unix group to be set for the inventory directory.</span><br><span class="line"># This parameter is not applicable if installing on</span><br><span class="line"># Windows based Operating System.</span><br><span class="line">#-------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">UNIX_GROUP_NAME=oinstall</span><br></pre></td></tr></table></figure>
-<h5 id="使用应答文件进行OGG软件安装"><a href="#使用应答文件进行OGG软件安装" class="headerlink" title="使用应答文件进行OGG软件安装"></a>使用应答文件进行OGG软件安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./runInstaller -silent -responseFile /home/oracle/fbo_ggs_Linux_x64_shiphome/Disk1/response/oggcore.rsp</span><br></pre></td></tr></table></figure>
-<h5 id="看到如下信息说明安装成功："><a href="#看到如下信息说明安装成功：" class="headerlink" title="看到如下信息说明安装成功："></a>看到如下信息说明安装成功：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The installation of Oracle GoldenGate Core was successful.Please check &apos;/u01/app/oracle/oraInventory/logs/silentInstall2017-05-04_03-25-48PM.log&apos; for more details.Successfully Setup Software.</span><br></pre></td></tr></table></figure>
+        <h5 id="现有架构"><a href="#现有架构" class="headerlink" title="现有架构"></a>现有架构</h5><p><img src="/images/db.png" alt><br><a id="more"></a></p>
+<h5 id="上线新从库"><a href="#上线新从库" class="headerlink" title="上线新从库"></a>上线新从库</h5><ul>
+<li><p>确保网络正常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">telnet x.x.x.x 3306 检查中间件与数据库之间网络是否正常。如果异常需要配置网络使的中间件与数据库之间能正常通信。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新从库上线</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在数据库中间件服务器上进行操作：</span><br><span class="line">mysql -h 127.0.0.1 -P2345 -uwebrepl -p  #进入中间件控制后台界面</span><br><span class="line">SELECT * FROM backends;     #检查当前后端数据库节点情况</span><br><span class="line">add slave x.x.x.x:3306;       #将后端新数据库服务器以只读库的方式上线。</span><br><span class="line">save config;            #保存配置到配置文件中。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="相应检查"><a href="#相应检查" class="headerlink" title="相应检查"></a>相应检查</h5><ul>
+<li>检查session是否正常切换到新从库</li>
+<li>检查新从库流量情况</li>
+<li>检查新从库TPS,QPS</li>
+<li>检查新从库SQL执行效率<h5 id="下线老从库"><a href="#下线老从库" class="headerlink" title="下线老从库"></a>下线老从库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">通过观察后，新从库正常运行，考虑将老从库下线。</span><br><span class="line">所有操作同样在中间件服务器上进行：</span><br><span class="line">mysql -h 127.0.0.1 -P2345 -uwebrepl -p  #进入中间件控制后台界面</span><br><span class="line">SELECT * FROM backends;     #检查当前后端数据库节点情况</span><br><span class="line">查出需要下线的从库backend_ndx号</span><br><span class="line">set offline $backend_ndx;  #将需要下线的从库的backend_ndx号填入。</span><br><span class="line">REMOVE BACKEND $backend_ndx;   #至此，从库下线完成。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="完成后检查"><a href="#完成后检查" class="headerlink" title="完成后检查"></a>完成后检查</h5><ul>
+<li>检查相关session是否正常切换到新从库</li>
+<li>检查新从库流量情况</li>
+<li>检查新从库的TPS、QPS情况</li>
+</ul>
+
       
     </div>
 
@@ -508,8 +526,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/02/oracle-backup/" rel="next" title="ORACLE数据库备份检查脚本">
-                <i class="fa fa-chevron-left"></i> ORACLE数据库备份检查脚本
+              <a href="/2019-04-03-pmm-install.html" rel="next" title="PMM部署方案">
+                <i class="fa fa-chevron-left"></i> PMM部署方案
               </a>
             
           </div>
@@ -517,10 +535,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/03/pmm-install/" rel="prev" title="PMM部署方案">
-                PMM部署方案 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -644,7 +658,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#解压ogg安装包"><span class="nav-number">1.</span> <span class="nav-text">解压ogg安装包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建ogg安装目录"><span class="nav-number">2.</span> <span class="nav-text">创建ogg安装目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置应答文件"><span class="nav-number">3.</span> <span class="nav-text">配置应答文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用应答文件进行OGG软件安装"><span class="nav-number">4.</span> <span class="nav-text">使用应答文件进行OGG软件安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#看到如下信息说明安装成功："><span class="nav-number">5.</span> <span class="nav-text">看到如下信息说明安装成功：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#现有架构"><span class="nav-number">1.</span> <span class="nav-text">现有架构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#上线新从库"><span class="nav-number">2.</span> <span class="nav-text">上线新从库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#相应检查"><span class="nav-number">3.</span> <span class="nav-text">相应检查</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#下线老从库"><span class="nav-number">4.</span> <span class="nav-text">下线老从库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#完成后检查"><span class="nav-number">5.</span> <span class="nav-text">完成后检查</span></a></li></ol></div>
             
 
           </div>
