@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[atlas主从切换]]></title>
+    <title><![CDATA[atlas数据库切换]]></title>
     <url>%2F2019-04-06-atlas-change.html</url>
     <content type="text"><![CDATA[现有架构 上线新从库 确保网络正常 1telnet x.x.x.x 3306 检查中间件与数据库之间网络是否正常。如果异常需要配置网络使的中间件与数据库之间能正常通信。 新从库上线 12345在数据库中间件服务器上进行操作：mysql -h 127.0.0.1 -P2345 -uwebrepl -p #进入中间件控制后台界面SELECT * FROM backends; #检查当前后端数据库节点情况add slave x.x.x.x:3306; #将后端新数据库服务器以只读库的方式上线。save config; #保存配置到配置文件中。 相应检查 检查session是否正常切换到新从库 检查新从库流量情况 检查新从库TPS,QPS 检查新从库SQL执行效率下线老从库1234567通过观察后，新从库正常运行，考虑将老从库下线。所有操作同样在中间件服务器上进行：mysql -h 127.0.0.1 -P2345 -uwebrepl -p #进入中间件控制后台界面SELECT * FROM backends; #检查当前后端数据库节点情况查出需要下线的从库backend_ndx号set offline $backend_ndx; #将需要下线的从库的backend_ndx号填入。REMOVE BACKEND $backend_ndx; #至此，从库下线完成。 完成后检查 检查相关session是否正常切换到新从库 检查新从库流量情况 检查新从库的TPS、QPS情况]]></content>
       <categories>
